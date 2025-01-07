@@ -3,9 +3,26 @@
     padding: 0;
     text-decoration: none;
     text-align: center;
+    font-family: 'geist', monospace;
+    margin-bottom: 10px;
 }
 
 a, a:visited, a:hover, a:active {
-    color: inherit;
+    color: steelblue;
     text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.languages-icons img {
+    padding-right: 10px;
+}
+
+.languages-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
