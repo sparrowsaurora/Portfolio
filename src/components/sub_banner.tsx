@@ -21,42 +21,24 @@ function SubBanner() {
   const paletteIcon = prefersLightMode ? paletteWhite : paletteBlack;
   const sproutIcon = prefersLightMode ? sproutWhite : sproutBlack;
 
+  const createWord = (icon: string, alt: string, label: string) => (
+    <span style={{ display: "inline-flex", alignItems: "center" }}>
+      <img
+        src={icon}
+        alt={alt}
+        style={{ width: "30px", verticalAlign: "middle", marginRight: "7px" }}
+      />
+      <span>{label}</span>
+    </span>
+  );
+
   const words = [
-    <span>
-      <img
-        src={hammerIcon}
-        alt={
-          prefersLightMode ? "hammer for light mode" : "hammer for dark mode"
-        }
-        style={{ width: "40px", verticalAlign: "middle" }}
-      />
-      Maker
-    </span>,
-    <span>
-      <img
-        src={codeIcon}
-        alt={prefersLightMode ? "white" : "black"}
-        style={{ width: "40px", verticalAlign: "middle" }}
-      />
-      Coder
-    </span>,
-    <span>
-      <img
-        src={paletteIcon}
-        alt={prefersLightMode ? "white" : "black"}
-        style={{ width: "40px", verticalAlign: "middle" }}
-      />
-      Content Creator
-    </span>,
-    <span>
-      <img
-        src={sproutIcon}
-        alt={prefersLightMode ? "white" : "black"}
-        style={{ width: "40px", verticalAlign: "middle" }}
-      />
-      Entrepreneur
-    </span>,
+    createWord(hammerIcon, "hammer", "Maker"),
+    createWord(codeIcon, "code", "Coder"),
+    createWord(paletteIcon, "palette", "Content Creator"),
+    createWord(sproutIcon, "sprout", "Entrepreneur"),
   ];
+
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -67,11 +49,7 @@ function SubBanner() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <>
-      <div className="sub-banner">{words[index]}</div>
-    </>
-  );
+  return <div className="sub-banner">{words[index]}</div>;
 }
 
 export default SubBanner;
