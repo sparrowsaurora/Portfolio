@@ -4,15 +4,13 @@
     text-decoration: none;
     text-align: center;
     font-family: 'geist', monospace;
-    margin-bottom: 10px;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
     color: steelblue;
-}
-
-body {
-    margin: 0 30px;
 }
 
 main {
@@ -20,105 +18,4 @@ main {
     flex-direction: column;
 }
 
-.languages-icons img {
-    padding-right: 10px;
-}
-
-.languages-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.project {
-    border: 2px solid #000;
-    border-radius: 5px;
-    width: fit-content;
-    margin: 20px 0;
-    color: #000;
-
-}
-
-.project h3 {
-    font-size: 18px;
-    text-align: left;
-    margin-left: 10px;
-}
-
-.project-langs {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 5px;
-}
-
-.project-lang {
-    font-size: 12px;
-    font-weight: 600;
-    margin: 0 5px;
-    padding: 2px 10px;
-    border: 2px solid #000;
-    border-radius: 5px;
-}
-
-.experiences {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.experience {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    width: 500px;
-}
-
-.experience-header {
-    display: flex;
-    gap: 10px;
-}
-
-.year {
-    color: white;
-    background-color: #000;
-    padding: 3px;
-    border-radius: 5px;
-    font-size: small;
-}
-
-.role {
-    font-weight: bolder;
-}
-
-.time-spent {
-    font-size: small;
-    color: gray;
-}
-
-.experience-description {
-    text-align: left;
-}
-
-@media (max-width: 850px) {
-    .projects {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .languages-icons {
-        flex-direction: column;
-    }
-
-    .experience {
-        width: 240px;
-    }
-}
-
+@media (max-width: 850px) {}
