@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Simple Static Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project provides a **Simple Static Portfolio** template designed for developers and individuals looking for an easy way to showcase their work. It's minimalistic, customizable, and suitable for both personal and professional use.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Clean Design**: A modern, responsive layout to display your projects and information effectively.
+- **Customizable**: Easily edit the HTML, CSS, and JavaScript to match your branding and style.
+- **Open Source**: Free to use and modify for your needs.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the Repository**
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/sparrowsaurora/Portfolio.git
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Open the Project**
+   Navigate to the project folder and open the `index.html` file in your browser to view the portfolio.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. **Customize**
+   - Update `index.html` with your personal information, links, and project details.
+   - Modify `style.css` to adjust colors, fonts, and layout.
+   - Add or update images in the `assets/` folder.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. **Deploy**
+   - Host the portfolio on GitHub Pages, Netlify, Vercel, or any static hosting platform.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Deployment Example (GitHub Pages)
+
+1. Push the repository to your GitHub account.
+2. Go to the repository's **Settings** > **Pages**.
+3. Select the branch (e.g., `main`) and root folder, then save.
+4. Your portfolio will be live at `https://<your-username>.github.io/Portfolio/`.
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request with your improvements or additional features.
+
+## License
+
+This project is licensed under the [GNU General Public License](LICENSE). You are free to use, modify, and distribute this portfolio under the terms of the GNU GPL.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- GitHub: [sparrowsaurora](https://github.com/sparrowsaurora)
+- Email: [sparrows.au@gmail.com](mailto:sparrows.au@gmail.com)
