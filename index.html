@@ -1,89 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sparrow's aurora</title>
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="normalise.css" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- JS -->
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <nav>
-      <a href="">Home</a>
-      <a href="">Projects</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-    </nav>
-    <header>
-      <h4 id="location">Based In Perth, WA</h4>
-      <h1 class="hero">
-        Hi I'm <span style="color: #3b82f6">Ryan Kelley</span>
-      </h1>
-      <h3>Known as "Sparrow" online.</h3>
-      <p id="bio">
-        Software developer and Content creator. Studying a Diploma of Advanced
-        programming
-      </p>
-      <a href="" class="primary">See My Work &#9658;</a>
-      <a href="" class="secondary">
-        <img
-          id="download-icon"
-          src="./assets/icons/download-solid.svg"
-          alt="Download icon"
-          height="16px"
+        <title>Sparrow's aurora</title>
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
-        Download Resume
-      </a>
-    </header>
-    <div class="languages">
-      <h2 class="title">Current Technologies</h2>
-      <h4 class="subtitle"></h4>
-      <div id="langs_tools">
-        <!-- *8 -->
-        <div class="item">
-          <div class="item-logo" id=""></div>
-          <div class="item-title"></div>
-          <div class="item-desc"></div>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="normalise.css" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- JS -->
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+        <header>
+            <h4 id="location">Based In Perth, WA</h4>
+            <h1 class="hero">
+                Hi I'm <span style="color: #3b82f6">Ryan Kelley</span>
+            </h1>
+            <h3>Known as "Sparrow" online.</h3>
+            <p id="bio">
+                Software developer and Content creator. Studying a Diploma of
+                Advanced programming
+            </p>
+            <div class="header-btns">
+                <a href="" class="primary">See My Work &#9658;</a>
+                <a href="" class="secondary">
+                    <img
+                        id="download-icon"
+                        src="./assets/icons/download-icon.svg"
+                        alt="Download icon"
+                        height="16px"
+                    />
+                    Download Resume
+                </a>
+            </div>
+        </header>
+        <div class="languages">
+            <h2 class="title">Current Technologies</h2>
+            <h4 class="subtitle"></h4>
+            <div id="langs_tools">
+                <!-- *8 -->
+                <!-- python,
+                 c#, rust,
+                 javascript
+                 php
+                 git, MySQL,
+                 Laravel-->
+                <div class="item">
+                    <div class="item-logo" id="python">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">Python</div>
+                    <div class="item-desc">My Main Language</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="csharp">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">C#</div>
+                    <div class="item-desc">Microsoft's Java</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="rust">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">Rust</div>
+                    <div class="item-desc">Systems Language</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="javascript">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">JavaScript</div>
+                    <div class="item-desc">Web Development Language</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="php">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">Php</div>
+                    <div class="item-desc">Better Than JavaScript</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="mysql">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">MySQL</div>
+                    <div class="item-desc">Database Management System</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="laravel">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">Laravel</div>
+                    <div class="item-desc">Php Framework</div>
+                </div>
+                <div class="item">
+                    <div class="item-logo" id="git">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                            width="60px"
+                        />
+                    </div>
+                    <div class="item-title">Git</div>
+                    <div class="item-desc">Version Control</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="porfolio">
-      <div class="portfolio-head">
-        <h2 class="title">My Projects</h2>
-        <a href="" class="primary">GitHub &#9658;</a>
-      </div>
-      <div class="projects">
-        <!-- *4?5 -->
-        <div class="project">
-          <h3 class="project-title"></h3>
-          <p class="resource"></p>
-          <a href="" class="project-link"></a>
+        <div class="porfolio">
+            <div class="portfolio-head">
+                <h2 class="title">My Projects</h2>
+                <a href="" class="primary">GitHub &#9658;</a>
+            </div>
+            <div class="projects">
+                <!-- *4?5 -->
+                <div class="project">
+                    <h3 class="project-title"></h3>
+                    <p class="resource"></p>
+                    <a href="" class="project-link"></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="testimonials">
-      <h2 class="title"></h2>
-    </div>
-    <div class="contact"></div>
-    <footer>
-      <p>&copy;<span id="year"></span> Sparrowsaurora</p>
-    </footer>
-  </body>
+        <div class="testimonials">
+            <h2 class="title"></h2>
+        </div>
+        <div class="contact"></div>
+        <footer>
+            <p>&copy;<span id="year"></span> Sparrowsaurora</p>
+        </footer>
+    </body>
 </html>
